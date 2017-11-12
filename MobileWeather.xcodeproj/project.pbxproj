@@ -12,6 +12,8 @@
 		1E555E4518466B6500B143B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E555E4418466B6500B143B4 /* AppDelegate.m */; };
 		1E555E4B18466B6500B143B4 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E555E4A18466B6500B143B4 /* MainViewController.m */; };
 		1E555E741846749500B143B4 /* HttpConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E555E731846749500B143B4 /* HttpConnection.m */; };
+		C110A7D31CE2212500EA614F /* SmartDeviceLinkService.m in Sources */ = {isa = PBXBuildFile; fileRef = C110A7D21CE2212500EA614F /* SmartDeviceLinkService.m */; };
+		D523D39ED6B99A71AF89CCBE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D8D5DCFDB0CAA8DDD1EE0B1 /* libPods.a */; };
 		E402122519F62BF500CEB3B7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E402122419F62BF500CEB3B7 /* Images.xcassets */; };
 		E402122719F689FF00CEB3B7 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E402122619F689FF00CEB3B7 /* Settings.bundle */; };
 		E4059D6219FF7D4800C9996D /* WeatherDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E4059D6119FF7D4800C9996D /* WeatherDataManager.m */; };
@@ -71,6 +73,10 @@
 		1E555E4A18466B6500B143B4 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		1E555E721846749500B143B4 /* HttpConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpConnection.h; sourceTree = "<group>"; };
 		1E555E731846749500B143B4 /* HttpConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpConnection.m; sourceTree = "<group>"; };
+		3D8D5DCFDB0CAA8DDD1EE0B1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE06A3BBF5215055CB74610B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		C110A7D11CE2212500EA614F /* SmartDeviceLinkService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartDeviceLinkService.h; sourceTree = "<group>"; };
+		C110A7D21CE2212500EA614F /* SmartDeviceLinkService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmartDeviceLinkService.m; sourceTree = "<group>"; };
 		E402122419F62BF500CEB3B7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E402122619F689FF00CEB3B7 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		E4059D6019FF7D4800C9996D /* WeatherDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherDataManager.h; sourceTree = "<group>"; };
@@ -147,6 +153,7 @@
 		E4E3EC601B6F59A9000F3DBF /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E4E3EC611B6F59A9000F3DBF /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = fr; path = fr.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		E9AF3AB518A562B7006F466F /* Notifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Notifications.h; sourceTree = "<group>"; };
+		EB648F36B45AE30D25B6CBFC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		FB8DD2C7193E39FA00F3E936 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -158,6 +165,7 @@
 				FB8DD2C8193E39FA00F3E936 /* CoreLocation.framework in Frameworks */,
 				1E555E3918466B6500B143B4 /* UIKit.framework in Frameworks */,
 				1E555E3518466B6500B143B4 /* Foundation.framework in Frameworks */,
+				D523D39ED6B99A71AF89CCBE /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,6 +178,7 @@
 				1E555E3A18466B6500B143B4 /* MobileWeather */,
 				1E555E3318466B6500B143B4 /* Frameworks */,
 				1E555E3218466B6500B143B4 /* Products */,
+				83614165B25CD54F155D970A /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -187,6 +196,7 @@
 				FB8DD2C7193E39FA00F3E936 /* CoreLocation.framework */,
 				1E555E3418466B6500B143B4 /* Foundation.framework */,
 				1E555E3818466B6500B143B4 /* UIKit.framework */,
+				3D8D5DCFDB0CAA8DDD1EE0B1 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -215,6 +225,15 @@
 				1E555E731846749500B143B4 /* HttpConnection.m */,
 			);
 			name = Connection;
+			sourceTree = "<group>";
+		};
+		83614165B25CD54F155D970A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB648F36B45AE30D25B6CBFC /* Pods.debug.xcconfig */,
+				AE06A3BBF5215055CB74610B /* Pods.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		E42CD7301A41A99E00C51CAA /* Data */ = {
@@ -351,6 +370,8 @@
 				1E555E4318466B6500B143B4 /* AppDelegate.h */,
 				1E555E4418466B6500B143B4 /* AppDelegate.m */,
 				E42B44311A655D3000D6C6A7 /* Settings.h */,
+				C110A7D11CE2212500EA614F /* SmartDeviceLinkService.h */,
+				C110A7D21CE2212500EA614F /* SmartDeviceLinkService.m */,
 			);
 			name = Application;
 			sourceTree = "<group>";
@@ -371,10 +392,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1E555E6318466B6500B143B4 /* Build configuration list for PBXNativeTarget "MobileWeather" */;
 			buildPhases = (
+				9D13E38A6BB18D1D82AC83D8 /* Check Pods Manifest.lock */,
 				1E555E2D18466B6500B143B4 /* Sources */,
 				1E555E2E18466B6500B143B4 /* Frameworks */,
 				1E555E2F18466B6500B143B4 /* Resources */,
 				E410DDBF1B441709008F1F0E /* Embed Frameworks */,
+				B7FEE9FAFAA5D3E46EB481BF /* Embed Pods Frameworks */,
+				313FD2A1F38F1FBA88353DD4 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -395,7 +419,7 @@
 				ORGANIZATIONNAME = Ford;
 				TargetAttributes = {
 					1E555E3018466B6500B143B4 = {
-						DevelopmentTeam = 3UZP3LH3N9;
+						DevelopmentTeam = 682P772SZT;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -444,6 +468,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		313FD2A1F38F1FBA88353DD4 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D13E38A6BB18D1D82AC83D8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B7FEE9FAFAA5D3E46EB481BF /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1E555E2D18466B6500B143B4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -460,6 +532,7 @@
 				E4059D6819FF8AF500C9996D /* ForecastIOService.m in Sources */,
 				E4780C221A35E6D200B194E7 /* UnitConverter.m in Sources */,
 				E477F2551A8B526E0028B59C /* UnitNumber.m in Sources */,
+				C110A7D31CE2212500EA614F /* SmartDeviceLinkService.m in Sources */,
 				E4C5B2E11AEE24AC0056E934 /* WeatherLanguage.m in Sources */,
 				E4BAFA851A0BA707003BB807 /* NSUserDefaults+RegisterSettings.m in Sources */,
 				E48C4DB319FE970100A90448 /* WeatherLocation.m in Sources */,
@@ -592,12 +665,14 @@
 		};
 		1E555E6418466B6500B143B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB648F36B45AE30D25B6CBFC /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_RESOURCE_RULES_PATH = "$(SDKROOT)/ResourceRules.plist";
+				DEVELOPMENT_TEAM = 682P772SZT;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = MobileWeather/Prefix.pch;
 				INFOPLIST_FILE = MobileWeather/Info.plist;
@@ -611,12 +686,14 @@
 		};
 		1E555E6518466B6500B143B4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE06A3BBF5215055CB74610B /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_RESOURCE_RULES_PATH = "$(SDKROOT)/ResourceRules.plist";
+				DEVELOPMENT_TEAM = 682P772SZT;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = MobileWeather/Prefix.pch;
 				INFOPLIST_FILE = MobileWeather/Info.plist;
